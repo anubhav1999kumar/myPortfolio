@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ayush .S.</title>
+
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+  <body>
+  <div  id="header">
+     <div class="container">
+      <!-- <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/aboutMe.mp4" type="video/mp4">
+      </video> -->
+        <nav>
+          <!-- <img src="images/name.png" class="logo"> -->
+          <!-- <img src="images/3.jpg" id="center">    -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificate_section">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+              <h2> < Developer / Designer > </h2><br>
+              <h3>Hi&nbsp;, I'm &nbsp;<span>Ayush Susheel</span><br><br>Welcome to my Portfolio Website</h3>
+         </div> 
+
+       </div>
+    </div>
+  <!------------------------------About Section---------------------------- -->
+  <div id = "about">
+    <div class="container">
+      <div class="row">
+         <div class="about-col-1">
+            <img src="images/bg.jpg">
+         </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p class="for_mobile">Insightful graduate student looking forward to join a reputed organization in order to utilize my learning, skills and
+            work for the betterment of the company where I can serve as a valuable person.</p>
+
+           <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+           </div>  
+
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>1) Programming</span><br><h9>Java , Python , XML , XSD</h9></li>
+                  <li><span>2) UI Technologies</span><br><h9>Html , CSS and Php (basics) , Jsp , Servlets</h9></li>
+                  <li><span>3) Database Software</span><br><h9>MySQL Workbench , NeO4J </h9></li>
+                  <li><span>4) Frameworks</span><br><h9>Spring MVC , Spring ORM(Hibernate), JaxB</h9></li>
+                  <li><span>5) Tools</span><br><h9>Jenkins , Jira, Confluence</h9></li>
+                </ul>
+              </div>
+
+           <div class="tab-contents" id="experience">
+              <ul>
+                  <li><span>1) Java Developer Intern</span><br><h9>CodSoft</h9></li>
+                  <li><span>2) Java Developer Intern</span><br><h9>Adenza ( NasDaQ )</h9></li>
+                  <li><span>3) Campus Ambassador</span><br><h9>Xebia</h9></li>
+                  <li><span>4) Head of Resource Planning</span><br><h9>UPES</h9></li>
+                  <li><span>5) Backend Developer Intern</span><br><h9>SaaSNest Technologies Pvt. Ltd.</h9></li>
+                  <li><span>6) Core Committee</span><br><h9>Microsoft Technical Community</h9></li>
+                  <li><span>7) Member</span><br><h9>ThinkBigData</h9></li>
+                </ul>
+            </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>1) UPES , Dehradun ( 2019 - 2023 )</span><br><h9>B.Tech CSE Big Data</h9></li>
+              <li><span>2) Sri Chaitanya Junior College , Telangana ( 2019 )</span><br><h9>Senior Secondary Education</h9></li>
+              <li><span>3) Aryaman Vikram Birla Institute of Learning , Uttarakhand ( 2017 )</span><br><h9>High School</h9></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!------------------------------Projects Section---------------------------- -->
+ <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">About my Projects</h1><br>
+      <div class="projects-list">
+        <div>
+          <i class="fas fa-book"></i>
+          <h2>Student Management System</h2>
+          <br><p>CRUD operations, error form handling, etc</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-comments"></i>
+          <h2>Client Server Chat Application</h2>
+          <br><p>Java,Socket Programming, etc</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-file"></i>
+          <h2>Word Counter via file/text</h2>
+          <br><p>Count number of words via text or file</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-video"></i>
+          <h2>YouTube Video Player Clone</h2>
+          <br><p>features like video controller</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <h2>Java Mail Sender</h2>
+          <br><p>Can send mail with and without attachment</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-book-atlas"></i>
+          <h2>Technical Knowledge Tester</h2>
+          <br><p>Quiz application</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-arrow-up-1-9"></i>
+          <h2>Number Guessing Game</h2>
+          <br><p>guess a number within the given range</p>
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div>
+          <i class="fa-solid fa-bugs"></i>
+          <h2>Predict which tortoise will win</h2>
+          <br><p>a simple game developed using python etc etc aur bhi likhuga abhi</p>
+          <!-- <br><a href="https://github.com/Ayushsusheel/Project">explore more</a> -->
+          <br><a href="https://www.google.com"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+      </div>
+     </div>
+  </div>
+
+<!------------------------------Certificate Section---------------------------- -->
+
+  <div id="certificate_section">
+    <div class="container">
+      <h1 class="sub-title">Certificates</h1>
+      <div class="certificate-list">
+        <div class="certificate">
+           <img src="images/googlecloud.png">
+           <div class="layer">
+              <h3>Introduction to Generative AI</h3> 
+              <p>ye iske bare me ye kya tha karke</p>
+              <a href="https://www.coursera.org/account/accomplishments/verify/XFZVWEJB6W4K"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+         </div>
+         <div class="certificate">
+           <img src="images/udemy3.png">
+           <div class="layer">
+              <h3>XML & XSD</h3> 
+              <p>ye iske bare me ye kya tha karke</p>
+              <a href="https://www.udemy.com/certificate/UC-bf583e52-87f2-4d77-b64d-5f2f610c1b20/"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        <div class="certificate">
+          <img src="images/coursera.png">
+          <div class="layer">
+            <h3>Intro to Big Data</h3> 
+            <p>ye iske bare me ye kya tha karke</p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/2C95DEMBY3QV"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <img src="images/codechef.png">
+          <div class="layer">
+            <h3>Learn Java</h3> 
+            <p>ye iske bare me ye kya tha karke</p>
+            <a href="https://www.codechef.com/certificates/preview/d55e28f"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      <!-- <style>
+        h4
+        {
+            text-align: center;
+            /* margin-bottom: 20%; */
+            /* margin-top: 0%; */
+            /* background: linear-gradient(rgba(00,0,0.6), #ff004f); */
+            font-size: 20px;
+        }
+    </style>
+    <h4 class="other_certificates">
+      <br>
+      <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/details/certifications/">
+        testing "a" text
+        <i class="fas fa-external-link-alt">
+          Others
+        </i>
+      </a>
+    </h4> -->
+  <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/details/certifications/" class="btn">See More</a>
+
+
+  </div>
+
+<!------------------------------Contact Form--------------------------------------------------------->  
+
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+             <h1 class="sub-title">Contact Me</h1> 
+             <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;ayushsusheel39@gmail.com</p>
+             <p><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91&nbsp; 9876543210</p><br>
+             <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
+                <a href="https://github.com/Ayushsusheel"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
+                <a href="https://www.hackerrank.com/profile/ayushsusheel3"><i class="fa-brands fa-hackerrank"></i></a>&nbsp;&nbsp;
+                <a href="https://www.youtube.com/channel/UCrnE5dRXQiagYp3GqKyX3kw"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;
+                <a href="https://www.cloudskillsboost.google/public_profiles/3d867afc-e694-4396-9afc-0c5e8bda5f5f"><i class="fa-brands fa-google"></i></a>
+                
+             </div>
+             <a href="images/AyushSusheel.pdf" download class="btn2">Download Resume</a>
+          </div>
+          <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name = "Name" placeholder="Your Name" required>
+                <input type="email" name= "Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="submit_btn" >Submit</button>
+              </form>
+              <span id="success_message"></span>
+
+          </div>
+        </div>
+    </div> 
+    <div class="copyright">
+        <p>Coppyright © <span>Ayush Susheel</span> . Made with&nbsp; <i class="fas fa-heart"></i>&nbsp;&nbsp;by&nbsp;Ayush</p>
+    </div>
+  </div>
+
+
+
+
+
+
+  
+
+
+
+
+
+    
+  <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      function opentab(tabName)
+      {
+          for(i of tablinks){
+              i.classList.remove("active-link")
+          }
+
+          for(j of tabcontents){
+              j.classList.remove("active-tab")
+          }
+
+          event.currentTarget.classList.add("active-link")
+          document.getElementById(tabName).classList.add("active-tab")
+      }
+
+   </script>
+
+
+   <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      } 
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      } 
+
+   </script>
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzOdq10uOMlSolkKAYhA-E4zeTr5CuD0IehEEWLObQK4UHBSaQ31n1P3XEuJjSuP8CSSw/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const successMessage = document.getElementById("success_message")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            successMessage.innerHTML = "Thankyou for contacting Me ,&nbsp;Will respond ASAP!"
+            setTimeout(function(){
+              successMessage.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+</body>
+</html>
+
+<!-- Thankyou for contacting Me ,&nbsp;Will respond ASAP! -->
