@@ -689,7 +689,7 @@ nav .fa-solid{
 
   .projects-list{
     /* margin-top: 1px; */
-    gap: 120px;
+    gap: 50px;
     display: grid;
     margin-bottom: 10%;
     /* grid-template-columns: auto auto auto auto; */
