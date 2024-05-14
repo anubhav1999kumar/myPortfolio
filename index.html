@@ -1,327 +1,764 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Ayush .S.</title>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-    <!----CSS link----->
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
-  </head>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
 
+body{
+  background: #080808;
+  color: #fff;
+}
 
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/home3.png");
+  
 
-  <body>
-  <div  id="header">
-     <div class="container">
-      <!-- <video autoplay loop muted plays-inline class="back-video">
-        <source src="images/aboutMe.mp4" type="video/mp4">
-      </video> -->
-        <nav>
-          <!-- <img src="images/name.png" class="logo"> -->
-          <!-- <img src="images/3.jpg" id="center">    -->
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificate_section">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-         </nav>
-         <div class="header-text">
-              <h2> < Developer / Designer > </h2><br>
-              <h3>Hi&nbsp;, I'm &nbsp;<span>Ayush Susheel</span><br><br>Welcome to my Portfolio Website</h3>
-         </div> 
+  background-size: cover;
+  background-position: center;
 
-       </div>
-    </div>
-  <!------------------------------About Section---------------------------- -->
-  <div id = "about">
-    <div class="container">
-      <div class="row">
-         <div class="about-col-1">
-            <img src="images/bg.jpg">
-         </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <p class="for_mobile">Insightful graduate student looking forward to join a reputed organization in order to utilize my learning, skills and
-            work for the betterment of the company where I can serve as a valuable person.</p>
-
-           <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-           </div>  
-
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                  <li><span>1) Programming</span><br><h9>Java , Python , XML , XSD</h9></li>
-                  <li><span>2) UI Technologies</span><br><h9>Html , CSS and Php (basics) , Jsp , Servlets</h9></li>
-                  <li><span>3) Database Software</span><br><h9>MySQL Workbench , NeO4J </h9></li>
-                  <li><span>4) Frameworks</span><br><h9>Spring MVC , Spring ORM(Hibernate), JaxB</h9></li>
-                  <li><span>5) Tools</span><br><h9>Jenkins , Jira, Confluence</h9></li>
-                </ul>
-              </div>
-
-           <div class="tab-contents" id="experience">
-              <ul>
-                  <li><span>1) Java Developer Intern</span><br><h9>CodSoft</h9></li>
-                  <li><span>2) Java Developer Intern</span><br><h9>Adenza ( NasDaQ )</h9></li>
-                  <li><span>3) Campus Ambassador</span><br><h9>Xebia</h9></li>
-                  <li><span>4) Head of Resource Planning</span><br><h9>UPES</h9></li>
-                  <li><span>5) Backend Developer Intern</span><br><h9>SaaSNest Technologies Pvt. Ltd.</h9></li>
-                  <li><span>6) Core Committee</span><br><h9>Microsoft Technical Community</h9></li>
-                  <li><span>7) Member</span><br><h9>ThinkBigData</h9></li>
-                </ul>
-            </div>
-
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>1) UPES , Dehradun ( 2019 - 2023 )</span><br><h9>B.Tech CSE Big Data</h9></li>
-              <li><span>2) Sri Chaitanya Junior College , Telangana ( 2019 )</span><br><h9>Senior Secondary Education</h9></li>
-              <li><span>3) Aryaman Vikram Birla Institute of Learning , Uttarakhand ( 2017 )</span><br><h9>High School</h9></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-<!------------------------------Projects Section---------------------------- -->
- <div id="projects">
-    <div class="container">
-      <h1 class="sub-title">About my Projects</h1><br>
-      <div class="projects-list">
-        <div>
-          <i class="fas fa-book"></i>
-          <h2>Student Management System</h2>
-          <br><p>Website Developed Using Spring framework.<br><br>More info can be found below</p>
-          <br><a href="https://github.com/Ayushsusheel/CODSOFT/tree/main/Task-2/project"><i class="fas fa-external-link-alt"></i></a>
-          <br><a href="https://youtu.be/OQ1Ej-LE6HA?si=6p19PPuFWR1RW495"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-comments"></i>
-          <h2>Client Server Chat Application</h2>
-          <br><p>Developed a chat application that works in unidirectional way within an area <br><br>Java, Socket Programming </p>
-          <br><a href="https://github.com/Ayushsusheel/ClientServer"><i class="fas fa-external-link-alt"></i></a>
-          <br><a href="https://youtu.be/uFr1EE_7qqg?si=9Kw9ybfpFtRJgKup"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-file"></i>
-          <h2>Word Counter via file/text</h2>
-          <br><p>Upload a file or can write text on my website in order to count total number of words</p>
-          <br><a href="https://github.com/Ayushsusheel/CODSOFT/blob/main/Task-2/project/src/main/java/springmvc/controller/FileUploadController.java"><i class="fas fa-external-link-alt"></i></a>
-          <br><a href="https://youtu.be/7v_zyO3CKa4?si=xTnaj63hdUMwvzC3"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-video"></i>
-          <h2>YouTube Video Player Clone</h2>
-          <br><p>Developed using Html,Css,Js.<br><br>Features like volume,full screen, theater mode, mini player etc.</p>
-          <br><a href="https://github.com/Ayushsusheel/projects/tree/main/videoPlayer"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-envelope"></i>
-          <h2>Mail Sender WebApp</h2>
-          <br><p>Fetched all the values from frontEnd used in my BackEnd Code and can easily send the mail with/without attachment to various email id's</p>
-          <br><a href="https://github.com/Ayushsusheel/CODSOFT/blob/main/Task-2/project/src/main/java/springmvc/controller/EmailController.java"><i class="fas fa-external-link-alt"></i></a>
-          <br><a href="https://youtu.be/OQ1Ej-LE6HA?si=-gVx-tIPQ8rwZYyK&t=280"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-book-atlas"></i>
-          <h2>Technical Knowledge Tester</h2>
-          <br><p>Java based Quiz application which maintains the score and displays who scored the highest among various students</p>
-          <br><a href="https://github.com/Ayushsusheel/Project"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-arrow-up-1-9"></i>
-          <h2>Number Guessing Game</h2>
-          <br><p>Guess a number within the given range and displays the score at the end. <br>Can set the Easy,Medium,Hard Level accordingly</p>
-          <br><a href="https://github.com/Ayushsusheel/CODSOFT/tree/main/Task-1%20Number%20Game"><i class="fas fa-external-link-alt"></i></a>
-          <br><a href="https://youtu.be/BhT1sd5XC94?si=60JlOvbppdXezz5F"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div>
-          <i class="fa-solid fa-bugs"></i>
-          <h2>Predict which tortoise will win</h2>
-          <br><p>Developed UI Application in which you have to enter the color of Turtle which may win the game. <br><br>Can check the result on console itself </p>
-          <!-- <br><a href="https://github.com/Ayushsusheel/Project">explore more</a> -->
-          <br><a href="https://github.com/Ayushsusheel/projects/tree/main/TortoiseRacingGame"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-      </div>
-     </div>
-  </div>
-
-<!------------------------------Certificate Section---------------------------- -->
-
-  <div id="certificate_section">
-    <div class="container">
-      <h1 class="sub-title">Certificates</h1>
-      <div class="certificate-list">
-        <div class="certificate">
-           <img src="images/googlecloud.png">
-           <div class="layer">
-              <h3>Introduction to Generative AI</h3> 
-              <p>Generation of New Content</p>
-              <a href="https://www.coursera.org/account/accomplishments/verify/XFZVWEJB6W4K"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-         </div>
-         <div class="certificate">
-           <img src="images/udemy3.png">
-           <div class="layer">
-              <h3>XML & XSD</h3> 
-              <p>Xml,Xsd,JaxB framework,Parsers</p>
-              <a href="https://www.udemy.com/certificate/UC-bf583e52-87f2-4d77-b64d-5f2f610c1b20/"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        <div class="certificate">
-          <img src="images/coursera.png">
-          <div class="layer">
-            <h3>Intro to Big Data</h3> 
-            <p>V's of BigData</p>
-            <a href="https://www.coursera.org/account/accomplishments/verify/2C95DEMBY3QV"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        <div class="certificate">
-          <img src="images/codechef.png">
-          <div class="layer">
-            <h3>Learn Java</h3> 
-            <p>OOP'S</p>
-            <a href="https://www.codechef.com/certificates/preview/d55e28f"><i class="fas fa-external-link-alt"></i></a>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-      <!-- <style>
-        h4
-        {
-            text-align: center;
-            /* margin-bottom: 20%; */
-            /* margin-top: 0%; */
-            /* background: linear-gradient(rgba(00,0,0.6), #ff004f); */
-            font-size: 20px;
-        }
-    </style>
-    <h4 class="other_certificates">
-      <br>
-      <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/details/certifications/">
-        testing "a" text
-        <i class="fas fa-external-link-alt">
-          Others
-        </i>
-      </a>
-    </h4> -->
-  <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/details/certifications/" class="btn">See More</a>
+  /* background: linear-gradient(rgba(00,0,0.6), aqua); */
 
 
-  </div>
+}
 
-<!------------------------------Contact Form--------------------------------------------------------->  
+/* 
+#right{
+  float: right;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-around; *
+  width: 32%;
+  height: 50%;
+  border-radius: 100%;
+} */
 
-  <div id="contact">
-    <div class="container">
-        <div class="row">
-          <div class="contact-left">
-             <h1 class="sub-title">Contact Me</h1> 
-             <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;ayushsusheel39@gmail.com</p>
-             <p><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91&nbsp; 9876543210</p><br>
-             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/ayush-susheel-672b13190/"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-                <a href="https://github.com/Ayushsusheel"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
-                <a href="https://www.hackerrank.com/profile/ayushsusheel3"><i class="fa-brands fa-hackerrank"></i></a>&nbsp;&nbsp;
-                <a href="https://www.youtube.com/channel/UCrnE5dRXQiagYp3GqKyX3kw"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp;
-                <a href="https://www.cloudskillsboost.google/public_profiles/3d867afc-e694-4396-9afc-0c5e8bda5f5f"><i class="fa-brands fa-google"></i></a>
-                
-             </div>
-             <a href="images/AyushSusheel.pdf" download class="btn2">Download Resume</a>
-          </div>
-          <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input type="text" name = "Name" placeholder="Your Name" required>
-                <input type="email" name= "Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="submit_btn" >Submit</button>
-              </form>
-              <span id="success_message"></span>
+/* #center */
+/* { */
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* height: 375px; */
+  /* width: 30%; */
+  /* border-radius: 20% ; */
+/* } */
 
-          </div>
-        </div>
-    </div> 
-    <div class="copyright">
-        <p>Coppyright © <span>Ayush Susheel</span> . Made with&nbsp; <i class="fas fa-heart"></i>&nbsp;&nbsp;by&nbsp;Ayush</p>
-    </div>
-  </div>
+
+
+
+.container{
+  padding: 50px 3%;
+} 
+
+
+/* 
+.container img{
+  height: 60%;
+  width: 50%;
+  border-radius: 100%;
+} */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+/* .logo{
+  height: 45px;
+  width: 210px;
+} */
+
+#sidemenu li a{
+  font-size: 20px;
+  margin-left: 126px;
+  
+}
+
+nav ul li{
+  display: inline-block;
+  /* list-style: none; */
+  /* margin: 10px 20px; */
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  
+  /* left: 10% */
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+
+ 
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.header-text h2{
+  margin-top: 10%;
+  margin-bottom: 5%; 
+  font-size: 60px;
+  padding-left: 5%;
+  /* left: ; */
+  /* text-align: center; */
+} 
+ 
+.header-text h3{
+  font-size: 25px;
+  padding-left: 11%;
+    
+} 
+
+
+.header-text h3 span{
+  color: #ff004f;
+  
+  font-size: 35px;
+  
+}
+
+.header-text h2:hover{
+  -webkit-text-stroke: 0.9px #ff004f;
+  color: transparent;
+  
+}
+
+/* .header-text h3:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+} */
+
+
+
+/*[ .back-video {
+ position: fixed;
+ right: 0;
+ bottom: 0;
+ z-index: -1;} ]*/
+ /* min-width: 40%;
+ min-height: 40%; */
+ /* overflow: hidden;
+ pointer-events: none; 
+}*/
 
 
 
 
 
 
+
+
+/* -----------------------------[ About Section ]-------------------------------*/
+
+#about{
+ padding-top: 80px;
+ padding-bottom: 8px; 
+ color: white;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  
+  border-radius: 20%;
+}
+
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 40px;
+  font-weight: 600;  
+  color: white; 
+}
+
+
+.about-col-2 h2:hover{
+  
+    -webkit-text-stroke: 0.9px rgb(255, 251, 2);
+    color: transparent;
+} 
+
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 100%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.tab-contents ul li span{
+color: #ff004f;
+font-size: 20px;
+}
+
+.tab-contents{
+  display: none;
+}
+
+.tab-contents ul li{
+  /* gap: 40px; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr))
+}
+
+.tab-contents.active-tab{
+  display: block;
+  
+}
+
+/* -----------------------------[ Projects Section ]-------------------------------*/
+
+#projects{
+  padding: 0% 0% ;
+}
+
+.container h1{
+  text-align: center;
+  margin-top: 0%;
+  
+}
+
+
+.container h1:hover{
+  
+  color: #ff004f;
+  -webkit-text-stroke: 0.9px #ff004f;
+    color: transparent;
+} 
+
+.projects-list{
+  margin-top: 50px;
+  gap: 40px;
+  display: grid;
+  /* grid-template-columns: auto auto auto auto; */
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)) 
+  
+  
+}
+
+.projects-list div{
+  background:#262626;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 20px; 
+  transition: background 0.5s, transform 0.5s;
+  
+  
+}
+
+.projects-list div i{
+      font-size: 40px;
+      margin-bottom: 30px;
+      margin-top: 10px;
+}
+
+.projects-list div h2{
+  color: #ff004f;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.projects-list div p{
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.projects-list div a i{
+  /* text-decoration: none; */
+  color: #000709;
+  font-size: 20px;
+  /* margin-top: 20px; */ 
+  /* text-align: center; */
+  
+}
+
+.projects-list div:hover{
+  background: linear-gradient(rgba(00,0,0.6), #ff004f);
+  /* background: rgb(100, 43, 207); */
+  transform: translateY(-10px);
+
+} 
+
+
+/* -----------------------------[ Certificate Section ]-------------------------------*/
+
+/* .certificate_section{
+  padding: 50px 0;
+
+} */
+
+.certificate-list{
+  display: grid;
+  gap: 7%;
+  margin-top: 3%;
+  /* margin-bottom: 0%; */
+  
+  
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr))
+}
+
+.certificate{
+  /* border-radius: 20px; */
+  /* position: relative;
+  overflow: hidden; */
+  
+}
+
+.certificate img{
+  width: 71%;
+  height: 79%;
+  border-radius: 50px;
+  /* display: block; */     
+  transition: transform 0.5s; 
+}
+
+/* .certificate-list h2{
+  text-align: center;
+}  */
+
+.layer{
+  /* width: 100%; */
+  height: 0%;
+  /* background: linear-gradient(rgb(67, 67, 151), aqua); */
+  /* border-radius: 10px; */
+  transition: height 0.5s;
+}
+
+.certificate:hover img{
+  transform: scale(1.1);
+} 
+
+
+.layer h3{
+  color: #ff004f;
+}
+
+.layer a i{
+  /* margin-top: 20px; */
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 60px;
+ 
+  
+  /* width: 600px;
+  height: 60px; */
+  /* border-radius: 100%; */
+  /* text-align: center;  */
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+
+}
+
+.btn:hover{
+  background: #ff004f;
+}
+
+
+
+/* <!------------------------------Contact Form---------------------------------------------------------> */
+
+
+
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis: 55%;
+}
+
+.contact-left p{
+  margin-top: 40px;
+  padding-left: 20%;
+}
+
+.contact-left h1{
+  font-size: 50px;
+}
+
+.contact-left p i{
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+  
+}
+
+
+.social-icons{
+  margin-top: 30px;
+  padding-left: 34%;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 0 4%;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn2{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.5s;
+
+}
+
+.btn2:hover{
+  background: #ff004f;
+}
+
+.submit_btn{
+  /* display: block; */
+  /* margin: 50px auto; */
+  /* width: fit-content; */
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  /* text-decoration: none; */
+  color: #fff;
+  background: #ff004f;
+  cursor: pointer;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+
+}
+
+.copyright{
+ 
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+
+}
+
+.copyright p span{
+  color: #ff004f;
+}
+
+.copyright i{
+  color: #ff004f;
+}
+
+
+/*---------------------------------------------------- Css Media Query (used for small screens) */
+
+nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-width: 1000px){
+  #header{
+    /* width: 80%;  */
+    /* height: 1%;  */
+    background-image: url("images/2_black.png");
+    border-radius: 9%;
+    /* background: linear-gradient(rgb(0,0,0,0.6), #ff004f); */
+  }
+
+  .header-text h2{
+    margin-top: 139%;
+    font-size: 70px;
+  }
+
+  .header-text h3{
+    font-size: 40px;
+    /* color: #fff; */
+    margin-top: 6%;
+    padding-left: 13%;
+  }
+
+  .header-text h3 span{
+    font-size: 68px;
+  }
+
+  nav .fa-solid{
+    display: block;
+    font-size: 60px;
+  }
+
+  nav ul{
+    /* background: #ff004f; */
+    background: linear-gradient(rgb(0,0,0,0.6), #ff004f);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 120vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 25px;    
+  }
+
+  #sidemenu li a{
+    font-size: 27px;
+    
+    margin-left: 3%;
+  }
+
+  #sidemenu li{
+    margin-top: 50%;
+  }
+
+  nav .fa-solid{
+    cursor: pointer;
+    left: 25px;
+  }   
+  
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title{
+    font-size: 29px;
+    text-align: center;
+    
+  }
+
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+    max-width: 90%;
+    padding-left: 11%;
+  }
+  
+  .about-col-2 h2{
+    margin-top: 6%;
+    margin-bottom: 5%;
+    font-size: 90px;
+  }
+
+  .about-col-2 .for_mobile{
+    padding-bottom: 4%;
+  }
+  /* .tab-links{ */
+    /* font-size: 20px; */
+    /* margin-bottom: 7%; */
+  /* } */
+
+  .tab-titles p{
+    font-size: 35px;
+    margin-bottom: 5%;
+  }    
+
+  .tab-contents ul li span{
+      font-size: 13px;
+      margin-bottom: 10px;
+      
+  }
+
+  .tab-contents ul li h9{
+    margin-bottom: 80px;
+    padding-left: 8%;
+    font-size: 12px;
+  }
+
+  .contact-left, .contact-right{
+    flex-basis: 100%;
+  }
+
+  #certificate_section h1{
+    font-size: 40px;
+    margin-top: -30px;
+    margin-bottom: 80px;
+  }
+
+  .certificate img{
+    height: 45%;
+    padding-left: 30%;
+    border-radius: 4%;
+  }
+  
+  .layer h3,p,a{
+    text-align: center;
+  }
+
+  .container h1{
+    font-size: 75px;
+  }
+
+  .projects-list{
+    /* margin-top: 1px; */
+    gap: 50px;
+    display: grid;
+    margin-bottom: 10%;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr)) 
+  }
+
+  #certificate_section{
+    font-size: 25px;
+    line-height: 2;
+  }
+
+  #certificate_section .container h1{
+    font-size: 95px;
+    margin-bottom: 1%;
+    
+  }
+
+  #certificate_section .btn{
+    font-size: 11px;
+  }
+
+  .contact-left h1{
+    font-size: 110px;
+  }
+
+  .social-icons{
+    margin-top: -50px;
+    margin-right: 70px;
+  }
+  .social-icons a i{
+    font-size: 60px;
+    
+    /* margin-right: 50px;
+    margin-left: 10px; */
+  }
+
+  .contact-left a{
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  .contact-right form input{
+    font-size: 30px;
+  }
+
+  .contact-right form textarea{
+    font-size: 30px;
+  }
+
+  .contact-right .submit_btn{
+    font-size: 31px;
+    margin-left: 40%;
+  }
+
+  .copyright{
+    font-size: 15px;
+  }
+
+  .copyright i{
+    font-size: 30px;
+  }
   
 
 
+}
 
 
-
-    
-  <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      
-      function opentab(tabName)
-      {
-          for(i of tablinks){
-              i.classList.remove("active-link")
-          }
-
-          for(j of tabcontents){
-              j.classList.remove("active-tab")
-          }
-
-          event.currentTarget.classList.add("active-link")
-          document.getElementById(tabName).classList.add("active-tab")
-      }
-
-   </script>
-
-
-   <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu(){
-        sidemenu.style.right = "0";
-      } 
-      function closemenu(){
-        sidemenu.style.right = "-200px";
-      } 
-
-   </script>
-
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzOdq10uOMlSolkKAYhA-E4zeTr5CuD0IehEEWLObQK4UHBSaQ31n1P3XEuJjSuP8CSSw/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      const successMessage = document.getElementById("success_message")
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            successMessage.innerHTML = "Thankyou for contacting Me ,&nbsp;Will respond ASAP!"
-            setTimeout(function(){
-              successMessage.innerHTML = ""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-  </script>
-
-</body>
-</html>
-
-<!-- Thankyou for contacting Me ,&nbsp;Will respond ASAP! -->
+#success_message{
+color: #61b752;
+margin-top: 20px;
+display: block;
+}
