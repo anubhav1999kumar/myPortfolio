@@ -562,16 +562,18 @@ nav .fa-solid{
   }
 
 .header-text h2 {
-  margin-top: 40%;
-  font-size: 40px;
+  margin-top: 22%;   /* ✅ Earlier it was 10%, increase it */
+  margin-bottom: 5%;
+  font-size: 60px;
+  padding-left: 5%;
   text-align: center;
 }
 
 .header-text h3 {
-  font-size: 24px;
-  margin-top: 2%;
+  font-size: 26px;
+  padding-left: 5%;
+  margin-top: 1%;
   text-align: center;
-  padding-left: 0;
 }
 
 .header-text h3 span {
