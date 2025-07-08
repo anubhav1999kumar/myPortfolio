@@ -635,11 +635,12 @@ nav .fa-solid{
     padding-left: 11%;
   }
   
-  .about-col-2 h2{
-    margin-top: 6%;
-    margin-bottom: 5%;
-    font-size: 90px;
-  }
+.about-col-2 h2 {
+  margin-top: 6%;
+  margin-bottom: 5%;
+  font-size: 30px;
+  text-align: center;
+}
 
   .about-col-2 .for_mobile{
     padding-bottom: 4%;
@@ -696,7 +697,7 @@ nav .fa-solid{
     display: grid;
     margin-bottom: 10%;
     /* grid-template-columns: auto auto auto auto; */
-    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr)) 
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
   }
 
   #certificate_section{
