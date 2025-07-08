@@ -116,20 +116,19 @@ nav ul li a:hover::after{
   width: 100%;
 }
 
-.header-text h2{
-  margin-top: 10%;
-  margin-bottom: 5%; 
+.header-text h2 {
+  margin-top: 18vh;
+  margin-bottom: 2vh;
   font-size: 60px;
-  padding-left: 5%;
-  /* left: ; */
-  /* text-align: center; */
-} 
- 
-.header-text h3{
-  font-size: 25px;
-  padding-left: 11%;
-    
-} 
+  text-align: center;
+  padding-left: 0;
+}
+.header-text h3 {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 0;
+  margin-top: 2vh;
+}
 
 
 .header-text h3 span{
@@ -562,18 +561,15 @@ nav .fa-solid{
   }
 
 .header-text h2 {
-  margin-top: 22%;   /* ✅ Earlier it was 10%, increase it */
-  margin-bottom: 5%;
-  font-size: 60px;
-  padding-left: 5%;
+  margin-top: 45vh;
+  font-size: 50px;
   text-align: center;
 }
-
 .header-text h3 {
-  font-size: 26px;
-  padding-left: 5%;
-  margin-top: 1%;
+  font-size: 28px;
   text-align: center;
+  padding-left: 0;
+  margin-top: 2vh;
 }
 
 .header-text h3 span {
