@@ -1,317 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Anubhav Kumar</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anubhav Kumar | Backend Developer</title>
 
-    <!----CSS link----->
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
-  </head>
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7a5bf939ff.js" crossorigin="anonymous"></script>
 
+  <!-- Google Fonts (Inter for professional look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-  <body>
-  <div  id="header">
-     <div class="container">
-      <!-- <video autoplay loop muted plays-inline class="back-video">
-        <source src="images/aboutMe.mp4" type="video/mp4">
-      </video> -->
-        <nav>
-          <!-- <img src="images/name.png" class="logo"> -->
-          <!-- <img src="images/3.jpg" id="center">    -->
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificate_section">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-         </nav>
-         <div class="header-text">
-              <h2> < Software Development Engineer > </h2><br>
-              <h3>Hi&nbsp;, I'm &nbsp;<span>Anubhav...</span><br><br>Welcome to my Portfolio Website</h3>
-         </div> 
+<body>
 
-       </div>
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h3>Anubhav Kumar</h3>
+        </div>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Anubhav Kumar</h1>
+          <h2>Backend Developer</h2>
+          <p>Experienced in building scalable microservices with Java Spring Boot, Redis, and Kafka</p>
+          <div class="header-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bengaluru, India</span>
+          </div>
+          <div class="header-buttons">
+            <a href="#contact" class="btn primary">Get In Touch</a>
+            <a href="#experience" class="btn secondary">View Experience</a>
+          </div>
+        </div>
+        <div class="header-image">
+          <div class="profile-circle">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
     </div>
-  <!------------------------------About Section---------------------------- -->
-  <div id = "about">
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate Backend Developer with expertise in microservices and scalable systems</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a dedicated Backend Developer currently working at <strong>Unique Identification Authority of India (AADHAAR)</strong> 
+            in Bengaluru. With a strong foundation in <strong>Java Spring Boot</strong> and microservices architecture, 
+            I specialize in building high-performance, scalable backend systems.
+          </p>
+          <p>
+            My expertise includes optimizing microservices with <strong>Redis caching</strong>, implementing <strong>Kafka messaging</strong>, 
+            and ensuring robust database interactions using <strong>JPA</strong>. I'm passionate about writing clean, 
+            maintainable code using functional programming principles and comprehensive testing with JUnit and Mockito.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <h4>1+ Years</h4>
+                <p>Professional Experience</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <h4>Java & Spring Boot</h4>
+                <p>Core Specialization</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-server"></i>
+              <div>
+                <h4>Microservices</h4>
+                <p>Architecture Expert</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">My journey in backend development and engineering</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Current Role -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="experience-card current">
+              <div class="experience-header">
+                <h3>Backend Developer</h3>
+                <span class="company">Unique Identification Authority of India - AADHAAR</span>
+                <span class="duration">July 2023 – Present</span>
+                <span class="location">Bengaluru</span>
+              </div>
+              <ul class="experience-details">
+                <li>Developed and optimized <strong>microservices using Java Spring Boot</strong>, ensuring high performance with Hikari connection pooling</li>
+                <li>Enhanced scalability and efficiency by utilizing <strong>Redis for caching</strong> and <strong>Kafka for messaging</strong></li>
+                <li>Implemented <strong>functional programming</strong> to write optimized, clean and maintainable code, enhancing performance and readability</li>
+                <li>Wrote comprehensive <strong>unit tests using Mockito and JUnit</strong> to ensure microservices functionality</li>
+                <li>Integrated <strong>gRPC for efficient service-to-service communication</strong></li>
+                <li>Successfully upgraded <strong>Spring Boot version from 3.0.1 to 3.3.11</strong> using OpenRewrite across all microservices</li>
+                <li>Implemented <strong>JPA for seamless data persistence</strong> and optimized sharded/partitioned databases for improved access speed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Internship -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="experience-card">
+              <div class="experience-header">
+                <h3>Research Intern</h3>
+                <span class="company">CSIR-CSIO</span>
+                <span class="duration">January 2022 – June 2022</span>
+                <span class="location">Chandigarh</span>
+              </div>
+              <ul class="experience-details">
+                <li>Designed and developed an <strong>agricultural drone capable of carrying 25 kg payload</strong></li>
+                <li>Integrated an <strong>Electrostatic Spraying System</strong> for efficient and uniform application</li>
+                <li>Fabricated drone frame and configured <strong>flight parameters and waypoints</strong> using Flight Planner Software</li>
+                <li>Project currently undergoing <strong>field trials</strong> in government controlled environments</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages -->
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <!-- Technologies & Frameworks -->
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-cogs"></i>
+            <h3>Technologies & Frameworks</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Spring Boot</span>
+            <span class="skill-tag primary">Kafka</span>
+            <span class="skill-tag primary">Redis</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">ArgoCD</span>
+            <span class="skill-tag">Kubernetes</span>
+          </div>
+        </div>
+
+        <!-- Tools & Libraries -->
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools & Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">IntelliJ IDEA</span>
+            <span class="skill-tag">Maven</span>
+            <span class="skill-tag">Amazon S3</span>
+            <span class="skill-tag primary">JUnit</span>
+            <span class="skill-tag primary">Mockito</span>
+            <span class="skill-tag">Redisson</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag primary">JPA</span>
+          </div>
+        </div>
+
+        <!-- Additional Skills -->
+        <div class="skill-category">
+          <div class="skill-header">
+            <i class="fas fa-brain"></i>
+            <h3>Core Concepts</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Microservices</span>
+            <span class="skill-tag primary">gRPC</span>
+            <span class="skill-tag">Functional Programming</span>
+            <span class="skill-tag">Database Optimization</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">System Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Key projects showcasing my technical expertise</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Real Time Security System -->
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Real Time Security System</h3>
+            <div class="project-description">
+              <p>Developed a comprehensive MATLAB-based security system for vehicle number plate recognition with database comparison capabilities.</p>
+              <ul class="project-features">
+                <li>Built MATLAB program for automatic license plate location detection in vehicle images</li>
+                <li>Implemented character extraction algorithms from detected number plates</li>
+                <li>Integrated database comparison system for real-time verification</li>
+                <li>Achieved <strong>92.3% accuracy</strong> in number plate recognition</li>
+              </ul>
+              <div class="tech-stack">
+                <strong>Technologies:</strong> MATLAB, Image Processing, Pattern Recognition, Database Integration
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Automated Pill Dispenser -->
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Automated Pill Dispenser</h3>
+            <div class="project-description">
+              <p>Designed and developed an IoT-based automated pill dispensing system with smart monitoring and alert capabilities.</p>
+              <ul class="project-features">
+                <li>Developed automated dispenser using <strong>Arduino and servo motors</strong> for precise pill dispensing</li>
+                <li>Integrated <strong>IR sensors</strong> for hand motion detection before dispensing</li>
+                <li>Implemented <strong>SMS alert system</strong> via cellular module for missed dose notifications</li>
+                <li>Created guardian notification system for medication compliance monitoring</li>
+              </ul>
+              <div class="tech-stack">
+                <strong>Technologies:</strong> Arduino, C++, Servo Motors, IR Sensors, Cellular Module, IoT
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Agricultural Drone Project -->
+        <article class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-drone"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Agricultural Drone System</h3>
+            <div class="project-description">
+              <p>Research project at CSIR-CSIO developing heavy-payload agricultural drone with electrostatic spraying capabilities.</p>
+              <ul class="project-features">
+                <li>Designed and fabricated drone frame capable of <strong>25 kg payload</strong></li>
+                <li>Integrated <strong>Electrostatic Spraying System</strong> for uniform pesticide application</li>
+                <li>Configured autonomous flight parameters using Flight Planner Software</li>
+                <li>Currently in field trials under government supervision</li>
+              </ul>
+              <div class="tech-stack">
+                <strong>Technologies:</strong> Drone Engineering, Flight Control Systems, Electrostatic Spraying, Autonomous Navigation
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION & ACTIVITIES ===== -->
+  <section id="education">
     <div class="container">
       <div class="row">
-         <div class="about-col-1">
-            <img src="images/bg.png">
-         </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <p class="for_mobile">A dedicated B.Tech ECE graduate with 2 years of experience as a Software Development Engineer, seeking to join a forward-thinking organization where I can apply my technical skills and problem-solving abilities to deliver impactful software solutions and grow alongside the company.</p>
-
-           <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-           </div>  
-
-            <div class="tab-contents active-tab" id="skills">
-                <ul>
-                  <li><span>1) Programming</span><br><h9> Java, C++, SQL, Problem Solving, DS</h9></li>
-                  <li><span>2) Database Software</span><br><h9>Redis, SQL, tableau, MySQL Workbench, Excel</h9></li>
-                  <li><span>3) Libraries</span><br><h9>Spring boot, Maven</h9></li>
-                  <li><span>4) Tools</span><br><h9>Docker, Jenkins, Kafka, Gitea, Microsoft Excel, Project Management, Presentations, Jupter Notebook, GitHub, VS code, </h9></li>
-                </ul>
+        <!-- Education Column -->
+        <div class="education-col">
+          <h2 class="section-title">Education</h2>
+          <div class="education-timeline">
+            <div class="education-item">
+              <div class="education-year">2019 - 2023</div>
+              <div class="education-content">
+                <h3>Bachelor of Technology</h3>
+                <h4>Electronics and Communication Engineering</h4>
+                <p>Punjab Engineering College, Chandigarh</p>
               </div>
-
-<div class="tab-contents" id="experience">
-  <ul>
-    <li>
-      <span>1) Software Developer Engineer</span><br>
-      <h4>Unique Identification Authority of India(UIDAI)</h4>
-    </li>
-  </ul>
-</div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>1) Punjab Engineering College, Chandigarh (2019 - 2023)</span><br><h9>MCA</h9></li>
-              <li><span>2) The Century School , Haryana (2019)</span><br><h9>Senior Secondary Education</h9></li>
-              <li><span>3) Pratap Public School , Karnal (2017)</span><br><h9>High School</h9></li>
-            </ul>
+            </div>
+            <div class="education-item">
+              <div class="education-year">2018</div>
+              <div class="education-content">
+                <h3>Class XII (CBSE)</h3>
+                <p>The Century School, Gharaunda</p>
+              </div>
+            </div>
+            <div class="education-item">
+              <div class="education-year">2016</div>
+              <div class="education-content">
+                <h3>Class X (CBSE)</h3>
+                <p>Pratap Public School, Karnal</p>
+              </div>
+            </div>
           </div>
+        </div>
 
+        <!-- Activities Column -->
+        <div class="activities-col">
+          <h2 class="section-title">Extra-Curricular Activities</h2>
+          <div class="activity-card">
+            <div class="activity-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="activity-content">
+              <h3>Volunteer Teacher</h3>
+              <h4>Project AABHA - National Service Scheme</h4>
+              <p>Teaching <strong>15+ underprivileged children</strong> weekly, contributing to educational development and community service through structured learning programs.</p>
+              <div class="activity-impact">
+                <span class="impact-tag">Community Service</span>
+                <span class="impact-tag">Educational Impact</span>
+                <span class="impact-tag">Weekly Commitment</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
+  </section>
 
-<!-- ------------------------------Projects Section---------------------------- -->
-<div id="projects">
-  <div class="container">
-    <h1 class="sub-title">About my Projects</h1><br>
-    <div class="projects-list">
-      
-      <div>
-        <i class="fas fa-book"></i>
-        <h2>Smart Fitness Insights</h2>
-        <br>
-        <p>
-          An AI-powered fitness dashboard built with R Shiny to monitor health metrics, analyze activity patterns, and deliver personalized workout and lifestyle recommendations in real time.
-          <br><br>
-          <strong>Tech used:</strong> R, Shiny, Shinydashboard, ggplot2, dplyr, readr, scales, Plotly, RStudio, CSV, Collaborative Filtering, Random Forest, Isolation Forest, Rule-Based AI.
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Smart-Fitness-Insights" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-      
-      <div>
-        <i class="fa-solid fa-comments"></i>
-        <h2>Blood Management System</h2>
-        <br>
-        <p>
-          A web-based Blood Management System enabling secure donor-recipient matching and email-driven blood request handling within a university setting.
-          <br><br>
-          <strong>Tech used:</strong> HTML, CSS, JavaScript (Node.js with Express), MongoDB
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Blood-Management-System" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-
-      <div>
-        <i class="fa-solid fa-file"></i>
-        <h2>Sentiment Analysis</h2>
-        <br>
-        <p>
-          Developed an AI-powered system that analyzes speech sentiment and visualizes emotional tone using NLP and data visualization.
-          <br><br>
-          <strong>Tech used:</strong> Python, NLTK (VADER), Google Speech Recognition, Matplotlib
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Sentiment-Analysis" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-
-      <div>
-        <i class="fa-solid fa-video"></i>
-        <h2>Talk Lens (Ongoing)</h2>
-        <br>
-        <p>
-          An AI-powered smart glasses system that reads and translates text aloud based on hand gestures.
-          <br><br>
-          <strong>Tech used:</strong> Python, MediaPipe, PaddleOCR, OpenCV, pyttsx3, ESP32, Arducam, 3D Printing
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/Talk-Lens" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-
-      <div>
-        <i class="fas fa-book"></i>
-        <h2>Encoder - Decoder Application</h2>
-        <br>
-        <p>
-          Android Application developed using Kotlin and Jetpack Compose in Android Studio.
-          <br><br>
-          <strong>More info:</strong> Click below to view the repository.
-        </p>
-        <br>
-        <a href="https://github.com/Deep841/App_Development" target="_blank">
-          <i class="fas fa-external-link-alt"></i> View on GitHub
-        </a>
-      </div>
-
-    </div>
-  </div>
-</div>
-<!-- ------------------------------Certificate Section---------------------------- -->
-<div id="certificate_section">
-  <div class="container">
-    <h1 class="sub-title">Certificates</h1>
-    <div class="certificate-list">
-
-      <div class="certificate">
-        <img src="images/googlecloud.png">
-        <div class="layer">
-          <h3>Android App Development Training Program</h3>
-          <a href="https://www.linkedin.com/in/deep-332437315/overlay/certifications/469173268/multiple-media-viewer/?profileId=ACoAAE_55BYBzbbSh_3A2dAHa7bqdWDpn8-UM3M&treasuryMediaId=1744225896409" target="_blank">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="certificate">
-        <img src="images/udemy3.png">
-        <div class="layer">
-          <h3>Microsoft Learn</h3>
-          <a href="https://www.linkedin.com/in/deep-332437315/overlay/certifications/460186398/multiple-media-viewer/?profileId=ACoAAE_55BYBzbbSh_3A2dAHa7bqdWDpn8-UM3M&treasuryMediaId=1744216909599" target="_blank">
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="certificate">
-        <img src="images/codechef.png">
-        <div class="layer">
-          <h3>Machine Learning Workshop</h3>
-          <!-- No link provided for this, you can add one if available -->
-        </div>
-      </div>
-
-    </div>
-
-    <a href="https://www.linkedin.com/in/anubhav-kumar-1981a8191/" class="btn" target="_blank">See More</a>
-
-  </div>
-</div>
-<!------------------------------Contact Form--------------------------------------------------------->  
-
-  <div id="contact">
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
     <div class="container">
-        <div class="row">
-          <div class="contact-left">
-             <h1 class="sub-title">Contact Me</h1> 
-             <p><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;anubhav1999kumar@gmail.com</p>
-             <p><i class="fa-solid fa-phone-volume"></i>&nbsp;&nbsp;+91&nbsp; 9876543210</p><br>
-             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/anubhav-kumar-1981a8191/"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
-                <a href="https://github.com/Deep841"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
-                <!-- <a href="https://www.hackerrank.com/profile/ayushsusheel3"><i class="fa-brands fa-hackerrank"></i></a>&nbsp;&nbsp;
-                <a href="https://www.youtube.com/channel/UCrnE5dRXQiagYp3GqKyX3kw"><i class="fa-brands fa-youtube"></i></a>&nbsp;&nbsp; -->
-                <!-- <a href="https://www.cloudskillsboost.google/public_profiles/3d867afc-e694-4396-9afc-0c5e8bda5f5f"><i class="fa-brands fa-google"></i></a> -->
-                
-             </div>
-             <a href="images/DeepResume.pdf" download class="btn2">Download Resume</a>
-          </div>
-          <div class="contact-right">
-              <form name="submit-to-google-sheet">
-                <input type="text" name = "Name" placeholder="Your Name" required>
-                <input type="email" name= "Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="submit_btn" >Submit</button>
-              </form>
-              <span id="success_message"></span>
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+      </div>
 
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:anubhav1999kumar@gmail.com">anubhav1999kumar@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="tel:+918XXX825742">+91 8XXX-82-5742</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/AnubhavKumar" target="_blank">linkedin.com/in/AnubhavKumar</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Bengaluru, India</p>
+            </div>
           </div>
         </div>
-    </div> 
-    <div class="copyright">
-        <p>Coppyright © <span>Anubhav</span> . Made with&nbsp; <i class="fas fa-heart"></i>&nbsp;&nbsp;by&nbsp;Anubhav</p>
+
+        <div class="contact-form">
+          <form name="contact-form">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
 
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Anubhav Kumar. Built with <i class="fas fa-heart"></i> for showcasing backend development expertise.</p>
+      </div>
+    </footer>
+  </section>
 
-
-
-
-
-  
-
-
-
-
-
-    
+  <!-- ===== SCRIPTS ===== -->
   <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+    /* ---------- Mobile Navigation ---------- */
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-280px"; }
+
+    /* ---------- Smooth Scrolling ---------- */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (window.innerWidth <= 768) closemenu();
+        }
+      });
+    });
+
+    /* ---------- Scroll Animations ---------- */
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe elements for animation
+    document.querySelectorAll('.project-card, .experience-card, .skill-category').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.6s ease';
+      observer.observe(el);
+    });
+
+    /* ---------- Contact Form ---------- */
+    document.forms['contact-form'].addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
+
+    /* ---------- Active Navigation ---------- */
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
       
-      function opentab(tabName)
-      {
-          for(i of tablinks){
-              i.classList.remove("active-link")
-          }
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
+      });
 
-          for(j of tabcontents){
-              j.classList.remove("active-tab")
-          }
-
-          event.currentTarget.classList.add("active-link")
-          document.getElementById(tabName).classList.add("active-tab")
-      }
-
-   </script>
-
-
-   <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu(){
-        sidemenu.style.right = "0";
-      } 
-      function closemenu(){
-        sidemenu.style.right = "-200px";
-      } 
-
-   </script>
-
-
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyJTTl_Si1to7hN4SMe6q7bgpIcS_R6nInRB_afAiqnNhIUiVWWQ2fhO8lGcpIFTTA5/exec'
-      const form = document.forms['submit-to-google-sheet']
-
-      const successMessage = document.getElementById("success_message")
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            successMessage.innerHTML = "Thankyou for contacting Me ,&nbsp;Will respond ASAP!"
-            setTimeout(function(){
-              successMessage.innerHTML = ""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
   </script>
 
 </body>
 </html>
-
-<!-- Thankyou for contacting Me ,&nbsp;Will respond ASAP! -->
